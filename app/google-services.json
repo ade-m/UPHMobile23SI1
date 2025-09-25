@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "881699524740",
+    "project_id": "uphmobile23si1-1",
+    "storage_bucket": "uphmobile23si1-1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881699524740:android:3328d73f12ad0eba4c32d1",
+        "android_client_info": {
+          "package_name": "edu.uph.m23si2.uphmobile23si1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiyFzLjdbVPu-rLGPrK3hweqdZ9fTLz70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
