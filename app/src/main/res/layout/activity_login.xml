@@ -36,6 +36,27 @@
             android:inputType="textPassword"
             android:hint="Password"/>
         <Button
+            android:id="@+id/btnMerah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Merah"/>
+        <Button
+            android:id="@+id/btnKuning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kuning"/>
+        <Button
+            android:id="@+id/btnHijau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hijau"/>
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Tambah Data ke RD"/>
+        <Button
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
