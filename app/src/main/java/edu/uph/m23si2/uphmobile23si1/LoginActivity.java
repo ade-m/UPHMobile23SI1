@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     Button btnLogin,btnTambah,btnMerah,btnKuning,btnHijau;
     TextView txvRegister;
     private FirebaseAuth mAuth;
+    TextView txvSuhuKelembapan;
     Boolean merah,kuning,hijau;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,8 @@ public class LoginActivity extends AppCompatActivity {
         btnMerah= findViewById(R.id.btnMerah);
         btnKuning= findViewById(R.id.btnKuning);
         btnHijau= findViewById(R.id.btnHijau);
+
+        txvSuhuKelembapan = findViewById(R.id.txvSuhuKelembapan);
 
         bacaRD();
 
@@ -126,6 +129,11 @@ public class LoginActivity extends AppCompatActivity {
                 merah = dataSnapshot.child("merah").getValue(Boolean.class);
                 kuning = dataSnapshot.child("kuning").getValue(Boolean.class);
                 hijau = dataSnapshot.child("hijau").getValue(Boolean.class);
+
+                float suhu = dataSnapshot.child("suhu").getValue(float.class);
+                float kelembapan = dataSnapshot.child("kelembapan").getValue(float.class);
+
+                txvSuhuKelembapan.setText("Suhu : "+suhu +"C Kelembapan : "+ kelembapan);
 
                 if(merah) btnMerah.setText("Matikan Lampu Merah");
                 else  btnMerah.setText("Hidupkan Lampu Merah");

@@ -35,6 +35,12 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:hint="Password"/>
+        <TextView
+            android:id="@+id/txvSuhuKelembapan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Memuat..."
+            android:textAlignment="center"/>
         <Button
             android:id="@+id/btnMerah"
             android:layout_width="match_parent"
